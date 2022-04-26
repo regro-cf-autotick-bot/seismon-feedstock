@@ -20,6 +20,7 @@ requirements:
     - setuptools
   run:
     - arrow
+    - astropy
     - flask-caching
     - flask-login
     - flask-sqlalchemy
