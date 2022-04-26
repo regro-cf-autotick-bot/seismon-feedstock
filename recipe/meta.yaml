@@ -35,6 +35,7 @@ requirements:
     - redis-py
     - scipy >=0.12.1
     - simplejson
+    - sqlalchemy
 
 test:
   imports:
