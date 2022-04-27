@@ -1,5 +1,5 @@
 {% set name = "seismon" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seismon-{{ version }}.tar.gz
-  sha256: ceff57b53e3463a84408425f0ad3feba2c5eb181bef3176af41e5aca15274a23
+  sha256: 8cac33d5d763fdaabf04b12b319820bc09a7091c9e1da38599c93c0b2820424d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - setuptools
   run:
     - arrow
+    - astropy
     - flask-caching
     - flask-login
     - flask-sqlalchemy
@@ -34,6 +35,7 @@ requirements:
     - redis-py
     - scipy >=0.12.1
     - simplejson
+    - sqlalchemy
 
 test:
   imports:
