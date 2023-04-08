@@ -1,11 +1,11 @@
-About seismon
-=============
+About seismon-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seismon-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gwdetchar/seismon/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seismon-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python package for mitigating the effects of earthquakes on GW detectors
 

@@ -1,5 +1,5 @@
 {% set name = "seismon" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seismon-{{ version }}.tar.gz
-  sha256: 8cac33d5d763fdaabf04b12b319820bc09a7091c9e1da38599c93c0b2820424d
+  sha256: fd5d60b6a7c4448fc7c5070de2bc67103fd0b6399467032ac037c235d847fad5
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -31,6 +31,7 @@ requirements:
     - numpy >=1.7.1
     - obspy
     - passlib
+    - psycopg2
     - python
     - redis-py
     - scipy >=0.12.1
