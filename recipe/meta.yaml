@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,7 +20,7 @@ requirements:
     - setuptools
   run:
     - arrow
-    - astropy
+    - astropy-base
     - flask-caching
     - flask-login
     - flask-sqlalchemy
